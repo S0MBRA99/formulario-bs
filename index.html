@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Formulario</title>
+    <style>
+        
+
+        .height-auto{
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container border">
+        <form class="p-4">
+            <div class="row bg-secondary-subtle">
+                <h1 class="col-12 fw-bold">Payment for example</h1>
+            </div>
+            <div class="row text-center mt-2">
+                <div class="col-12 mx-auto">
+                    <p class="text-start bg-dark-subtle p-2">some fields are missing</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-5">
+                    <label class="mb-2" for="cardnumber">Card #</label><br>
+                    <input type="number" name="carnumber" id="cardnumber" placeholder="XXXXXXXXXXXXXXXXX" class="w-100" min="10">
+                </div>
+                <div class="col-3">
+                    <label class="mb-2" for="cvc">CVC #</label><br>
+                    <input type="number" name="cvc" id="cvc" placeholder="000" class="w-100" min="3">
+                </div>
+                <div class="col-4">
+                    <label class="mb-2" for="amount">Amount #</label><br>
+                    <input type="number" name="amount" id="cardnumber" placeholder="Amount $" class="w-100" min="1">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6">
+                    <label class="mb-2" for="first name">First name</label><br>
+                    <input type="text" name="first name" id="first name" placeholder="type your name" class="w-100">
+                </div>
+                <div class="col-6">
+                    <label class="mb-2" for="last name">Last name</label><br>
+                    <input type="text" name="last name" id="last name" placeholder="type your last name" class="w-100">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6">
+                    <label class="mb-2" for="city">City</label><br>
+                    <input type="text" name="city" id="city" placeholder="type your city" class="w-100">
+                </div>
+                <div class="col-3">
+                    <label class="mb-2" for="pick state">Pick state</label><br>
+                    <select name="pick state" id="pick state" class=" form-select w-100">
+                        <option selected disabled>Select your country</option>
+                        <option value="es">España</option>
+                        <option value="mx">México</option>
+                        <option value="ar">Argentina</option>
+                        <option value="ur">Uruguay</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label class="mb-2" for="postal code">Postal code</label><br>
+                    <input type="number" name="postal code" id="postal code" placeholder="type your postal code" class="w-100" min="5">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6 d-flex">
+                    <fieldset>
+                        <legend class="fs-5 mt-2">We accept:</legend>
+                        <div class="bg-dark-subtle">
+                            <label for="type payment"><i class="fa-brands fa-cc-visa"></i></label>
+                            <input type="radio" name="type payment" id="type payment">
+                            <label for="type payment"><i class="fa-brands fa-paypal"></i></label>
+                            <input type="radio" name="type payment" id="type payment">
+                            <label for="type payment"><i class="fa-brands fa-cc-stripe"></i></label>
+                            <input type="radio" name="type payment" id="type payment">
+                            <label for="type payment"><i class="fa-solid fa-money-bill-transfer"></i></label>
+                            <input type="radio" name="type payment" id="type payment">
+                        </div>
+                    </fieldset>
+                    
+                    
+                </div>
+                <div class="col-6">
+                    <p class="mt-1 mb-0">Message</p>
+                    <textarea name="message" id="message" placeholder="type here" class="w-100"></textarea>
+                </div>
+            </div>
+            <div class="row mt-2 p-2 bg-secondary-subtle">
+                <button type="button" class="col-1 ms-auto me-2 bg-secondary">cancel</button>
+                <button type="submit" value="send form" class="col-1 bg-primary">send    </button>
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/ae7db627dc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html>
