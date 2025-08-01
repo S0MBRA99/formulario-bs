@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Formulario</title>
-    <style>
-        
-
-        .height-auto{
-            height: auto;
-        }
-    </style>
 </head>
 <body>
-    <div class="container border">
-        <form class="p-4">
+    <div class="container border mt-5">
+        <form>
             <div class="row bg-secondary-subtle">
                 <h1 class="col-12 fw-bold">Payment for example</h1>
             </div>
@@ -27,35 +20,35 @@
             <div class="row mt-2">
                 <div class="col-5">
                     <label class="mb-2" for="cardnumber">Card #</label><br>
-                    <input type="number" name="carnumber" id="cardnumber" placeholder="XXXXXXXXXXXXXXXXX" class="w-100" min="10">
+                    <input type="number" name="carnumber" id="cardnumber" placeholder="XXXXXXXXXXXX" class="w-100" min="10" required>
                 </div>
                 <div class="col-3">
                     <label class="mb-2" for="cvc">CVC #</label><br>
-                    <input type="number" name="cvc" id="cvc" placeholder="000" class="w-100" min="3">
+                    <input type="number" name="cvc" id="cvc" placeholder="000" class="w-100" min="3" required>
                 </div>
                 <div class="col-4">
                     <label class="mb-2" for="amount">Amount #</label><br>
-                    <input type="number" name="amount" id="cardnumber" placeholder="Amount $" class="w-100" min="1">
+                    <input type="number" name="amount" id="cardnumber" placeholder="Amount $" class="w-100" min="1" required>
                 </div>
             </div>
             <div class="row mt-2">
                 <div class="col-6">
                     <label class="mb-2" for="first name">First name</label><br>
-                    <input type="text" name="first name" id="first name" placeholder="type your name" class="w-100">
+                    <input type="text" name="first name" id="first name" placeholder="type your name" class="w-100" required>
                 </div>
                 <div class="col-6">
                     <label class="mb-2" for="last name">Last name</label><br>
-                    <input type="text" name="last name" id="last name" placeholder="type your last name" class="w-100">
+                    <input type="text" name="last name" id="last name" placeholder="type your last name" class="w-100" required>
                 </div>
             </div>
             <div class="row mt-2">
                 <div class="col-6">
                     <label class="mb-2" for="city">City</label><br>
-                    <input type="text" name="city" id="city" placeholder="type your city" class="w-100">
+                    <input type="text" name="city" id="city" placeholder="type your city" class="w-100" required>
                 </div>
                 <div class="col-3">
                     <label class="mb-2" for="pick state">Pick state</label><br>
-                    <select name="pick state" id="pick state" class=" form-select w-100">
+                    <select name="pick state" id="pick state" class=" form-select w-100" required>
                         <option selected disabled>Select your country</option>
                         <option value="es">España</option>
                         <option value="mx">México</option>
@@ -65,7 +58,7 @@
                 </div>
                 <div class="col-3">
                     <label class="mb-2" for="postal code">Postal code</label><br>
-                    <input type="number" name="postal code" id="postal code" placeholder="type your postal code" class="w-100" min="5">
+                    <input type="number" name="postal code" id="postal code" placeholder="type postal code" class="w-100" min="5" required>
                 </div>
             </div>
             <div class="row mt-2">
@@ -88,12 +81,12 @@
                 </div>
                 <div class="col-6">
                     <p class="mt-1 mb-0">Message</p>
-                    <textarea name="message" id="message" placeholder="type here" class="w-100"></textarea>
+                    <textarea name="message" id="message" placeholder="type here" class="w-100" required></textarea>
                 </div>
             </div>
             <div class="row mt-2 p-2 bg-secondary-subtle">
-                <button type="button" class="col-1 ms-auto me-2 bg-secondary">cancel</button>
-                <button type="submit" value="send form" class="col-1 bg-primary">send    </button>
+                <button type="submit" value="send form" class="btn me-auto btn-primary w-25">send</button>
+                <button type="button" class="btn ms-auto btn-secondary w-25">cancel</button>
             </div>
         </form>
     </div>
